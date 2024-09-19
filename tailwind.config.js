@@ -7,10 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+       container:{
+        center: true,
+        padding:"10 px",
+       },
+
+       colors:{
+          yellow: "#d1b75f",
+          black: "#11111",
+       },
+
     },
   },
   plugins: [],

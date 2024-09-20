@@ -3,6 +3,9 @@ import "./globals.css";
 import CardActivation from "@/components/CardActivation";
 import {Inter} from "@next/font/google";
 import Header from "@/components/Header";
+import ProfileCompletion from "@/components/ProfileCompletion";
+import CustomProfile from "@/components/CustomProfile";
+import Footer from "@/components/Footer";
 
 
 
@@ -21,8 +24,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} text-l  m-10` }>
+      <meta name = "viewport" content= "width=device-width, initial-scale=1.0" className=""></meta>
         <Header />
         <CardActivation />
+        <ProfileCompletion />
+        <CustomProfile />
+        <Footer />
         {children}
       </body>
     </html>

@@ -1,18 +1,16 @@
-import {Michroma} from "@next/font/google";
+import {Poppins} from "@next/font/google";
 
-const michroma = Michroma({
-    weight:'400',
+const poppins = Poppins({
+    weight:['200','400', '600','900'],
     subsets:['latin'],
   });
 
-
 export default function Header(){
     return(
-        <>
-            <h1 className={`${michroma.className} text-4xl`}>User Guide</h1>
-            <h3 className="text-yellow">One Tap Connect Digital Business Card </h3>
+        <div className="flex items-center justify-center text-center h-screen bg-cover bg:auto bg-radial-gradient bg-center animate-pulse bg-no-repeat sm:scale-100 lg:scale-90">
+            <h1 className={`${poppins.className} text-4xl lg:text-8xl sm:text-5xl md:text-6xl animate-grow`}>User Guide</h1>        
+        </div>
         
-        </>
         )
         
 }

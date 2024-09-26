@@ -7,7 +7,64 @@ const michroma = Michroma({
 
 export default function CardActivation(){
     return(
-        <div className="mt-10">
+        <div className="h-screen">
+            <div className="flex flex-row ">
+                <div>
+                    <h1 className="text-8xl font-bold">01</h1>
+                </div>
+                <span className="pr-5"></span>
+                <div className="mt-4">
+                    <h2 className="tracking-tight text-2xl font-semibold">Card Activation</h2>
+                    <h3 className="tracking-tight text-xl">You can choose either two of these options two successfully activate your card.</h3>
+                </div>
+            </div>
+
+
+            <div className="flex">
+                <div>
+                    <video className="w-96 max-w-3xl rounded-lg shadow-lg"
+                    autoPlay
+                    // loop
+                    muted
+                    src="/1.mp4" alt="card tap video"></video>
+                </div>
+
+                <div className="tracking-tight mt-12 p-5 container items-center breakwords w-2/4 border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
+                    <p className="text-sm">Activate your card by tapping it against your phone. <br></br><br></br>
+
+                    This uses NFC technology. For Apple phones (iPhone 8 onwards), tap near the front camera.<br></br><br></br>
+
+                    For Android, tap on the back. If NFC isn't working, turn it on in settings.
+                    </p>
+                </div>
+
+
+                <div>
+                    <video className="w-96 max-w-3xl rounded-lg shadow-lg"
+                    autoPlay
+                    // loop
+                    muted
+                    src="/2.mp4" alt="card tap video"></video>
+                </div>
+
+                <div className="tracking-tight mt-12 p-5 container items-center breakwords w-2/4 border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
+                    <p className="text-sm">Activate your card by tapping it against your phone. <br></br><br></br>
+
+                    This uses NFC technology. For Apple phones (iPhone 8 onwards), tap near the front camera.<br></br><br></br>
+
+                    For Android, tap on the back. If NFC isn't working, turn it on in settings.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    )
+
+
+}
+
+
+{/* <div className="mt-10">
             <h1 className={`${michroma.className} text-xl text-center md:text-base md:text-left`}>Card Activation</h1>
 
             <div className="mt-10 flex flex-col lg:flex-row flex-shrink-0">
@@ -36,8 +93,4 @@ export default function CardActivation(){
 
             </div>
             
-        </div>
-    )
-
-
-}
+        </div> */}

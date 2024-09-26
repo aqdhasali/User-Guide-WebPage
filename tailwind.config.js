@@ -7,16 +7,31 @@ module.exports = {
   ],
   theme: {
     extend: {
-       container:{
+      container: {
         center: true,
-        padding:"10 px",
-       },
+        padding: "10 px",
+      },
 
-       colors:{
-          yellow: "#d1b75f",
-          black: "#11111",
-       },
+      colors: {
+        yellow: "#d1b75f",
+        black: "#11111",
+      },
 
+      backgroundImage: {
+        "radial-gradient": "url('/home-gb.png')",
+        "radial-gradient-md": "url('/sub-bg.svg')",
+        "footer-bg":"url('/footer-bg.svg')"
+      },
+
+      keyframes: {
+        grow: {
+          '0%, 100%': { transform: 'scale(0.95)', opacity: 1 },
+          '50%': { transform: 'scale(1.5)', opacity: 1 },
+        },
+      },
+      animation: {
+        grow: 'grow 1.1s ease-in-out',
+      },
     },
   },
   plugins: [],

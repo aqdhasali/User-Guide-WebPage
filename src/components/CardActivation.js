@@ -26,11 +26,10 @@ export default function CardActivation(){
                 {/* Image One  */}
                 <div className="flex flex-col sm:flex-row items-center justify-center">
                     
-                    <video className="w-96 max-w-3xl rounded-lg shadow-lg"
+                    <img className="w-96 max-w-3xl rounded-lg shadow-lg"
                     autoPlay
-                    // loop
                     muted
-                    src="/1.mp4" alt="card tap video"></video>
+                    src="/1.gif" alt="card tap video"></img>
                     
 
                     <div className="w-auto tracking-tight mt-12 p-5 container items-center breakwords w-2/4  border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
@@ -47,11 +46,11 @@ export default function CardActivation(){
 
                 <div className="flex flex-col sm:flex-row justify-center items-center">
                 
-                    <video className="w-96 max-w-3xl rounded-lg shadow-lg"
+                    <img className="w-96 max-w-3xl rounded-lg shadow-lg"
                     autoPlay
                     // loop
                     muted
-                    src="/2.mp4" alt="card tap video"></video>
+                    src="/2.gif" alt="card tap video"></img>
                     
 
                     <div className="w-auto tracking-tight mt-12 p-5 container items-center breakwords  border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
@@ -64,12 +63,6 @@ export default function CardActivation(){
                     </div>
 
                 </div>
-
-
-                
-
-                
-
             </div>
         </div>
     )

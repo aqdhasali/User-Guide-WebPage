@@ -18,7 +18,7 @@ module.exports = {
       },
 
       backgroundImage: {
-        "radial-gradient": "url('/home-gb.png')",
+        "radial-gradient": "url('/home-bg.svg')",
         "radial-gradient-md": "url('/sub-bg.svg')",
         "footer-bg":"url('/footer-bg.svg')"
       },

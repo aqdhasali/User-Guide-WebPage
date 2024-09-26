@@ -7,8 +7,8 @@ const poppins = Poppins({
 
 export default function Header(){
     return(
-        <div className="flex items-center justify-center text-center h-screen bg-cover bg:auto bg-radial-gradient bg-center animate-pulse bg-no-repeat sm:scale-100 sm:bg-auto lg:scale-90 lg:bg-auto">
-            <h1 className={`${poppins.className} text-4xl lg:text-8xl sm:text-5xl md:text-6xl animate-grow`}>User Guide</h1>        
+        <div className="flex items-center justify-center text-center min-h-screen bg-cover bg:auto bg-radial-gradient bg-center animate-pulse bg-no-repeat sm:scale-100 sm:bg-auto lg:scale-90 lg:bg-auto">
+            <h1 className={`${poppins.className} text-6xl lg:text-8xl sm:text-5xl md:text-6xl animate-grow`}>User Guide</h1>        
         </div>
 
     )

@@ -1,12 +1,12 @@
 export default function ContinueActivation(){
     return(
         <div className="min-h-screen m-10">
-            <div className="mt-10 flex flex-col sm:flex-col lg:flex-row gap-x-10  items-center justify-end">
+            <div className="mt-10 flex flex-col sm:flex-col lg:flex-row gap-10  items-center justify-end">
                 <div>
                     <h1 className="text-8xl font-bold">02</h1>
                 </div>
 
-                <div className="text-center sm:text-center">
+                <div className="mt-4 text-center sm:text-center">
                         <h2 className="tracking-tight text-2xl font-semibold">Continue Activation</h2>
                         <h3 className="tracking-tight text-xl">Continue to activation to finalize your registration process.</h3>
                 </div>
@@ -17,12 +17,12 @@ export default function ContinueActivation(){
 
             <div className="flex flex-col sm:flex-row">
                 <div>
-                    <video className="w-96 max-w-3xl rounded-lg shadow-lg"
+                    <img className="w-96 max-w-3xl rounded-lg shadow-lg"
                         autoPlay
                         // loop
                         muted
-                        src="/3.mp4" alt="card tap video">
-                    </video>
+                        src="/3.gif" alt="card tap video">
+                    </img>
                 </div>
 
 

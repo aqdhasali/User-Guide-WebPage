@@ -21,11 +21,11 @@ export default function ProfileCompletion(){
 
             <div className="flex flex-col sm:flex-row">
                 <div>
-                    <video className="w-96 max-w-3xl rounded-lg shadow-lg"
+                    <img className="w-96 max-w-3xl rounded-lg shadow-lg"
                     autoPlay
                     // loop
                     muted
-                    src="/4.mp4" alt="card tap video"></video>
+                    src="/4.gif" alt="card tap video"></img>
                 </div>
 
                 <div className="w-auto sm:w-1/2 tracking-tight mt-28 p-10 container items-center breakwords border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">

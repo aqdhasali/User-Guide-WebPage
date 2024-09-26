@@ -1,6 +1,6 @@
 export default function FinalProfile(){
     return(
-        <div className="h-screen  bg-contain bg-center bg-radial-gradient bg-no-repeat">
+        <div className="min-h-screen  bg-contain bg-center bg-radial-gradient bg-no-repeat m-10">
             <div className="flex flex-col justify-center items-center">
                 <div>
                     <h2 className="tracking-tight tracking-tighter text-center text-3xl font-semibold bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent ">You're Ready To Go</h2>
@@ -8,7 +8,7 @@ export default function FinalProfile(){
                 </div>
 
                 <div className="flex items-center justify-center">
-                    <img className="w-2/3 h-full max-w-3xl rounded-lg"
+                    <img className="lg:w-80 w-screen h-2/4 max-w-3xl rounded-lg"
                                 autoPlay
                                 // loop
                                 muted

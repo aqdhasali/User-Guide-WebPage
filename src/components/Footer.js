@@ -7,8 +7,9 @@ const michroma = Michroma({
 
 export default function Footer(){
     return(
-        <div className="flex flex-row mt-20 h-screen">
-            <div className="mt-20 flex flex-col gap-y-10">
+        <div className="m-10 flex flex-col lg:flex-row  h-screen">
+            
+            <div className="flex flex-col gap-y-10">
                 <h2 className="text-5xl bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent">Trust-Quality-Dignity<br></br>-Connected</h2>
                 <h3>Want to learn more about us?Discover<br></br> our story and mission by clicking below!</h3>
                 <div className="flex gap-x-5">
@@ -16,14 +17,16 @@ export default function Footer(){
                         <h3 className="tracking-tight text-slate-800 text-md text-center"><a href="https://app.primeq.co/">Login</a></h3>
                     </div>
                     <div className="bg-white w-20 flex items-center justify-center rounded-md">
-                        <h3 className="tracking-tight text-slate-800 text-md"><a href="https://commercialprime.co.uk/">Website</a></h3>
+                        <h3 className="tracking-tight text-slate-800 text-md">Website</h3>
                     </div>
                 </div>
             </div>
 
-            <div className="bg-right-top animate-pulse bg-contain bg-footer-bg bg-no-repeat w-screen h-full">
-
+            <div className="flex flex-col lg:flex-row items-center justify-center animate-pulse">
+                <img src="/footer-bg.svg" alt="footer background"></img>
             </div>
+
+          
 
 
         </div>

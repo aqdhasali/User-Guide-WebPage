@@ -29,7 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} scroll-smooth text-l m-10` }>
+      <body className={`${inter.className} scroll-smooth text-l` }>
       <meta name = "viewport" content= "width=device-width, initial-scale=1.0" className=""></meta>
         <Header />
         <SubHeaderOne />

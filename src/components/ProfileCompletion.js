@@ -1,14 +1,22 @@
-import {Michroma} from "@next/font/google";
+"use client";
 
-const michroma = Michroma({
-    weight:'400',
-    subsets:['latin'],
-  });
+
+import {useGSAP} from "@gsap/react";
+import {useRef} from "react";
+import gsap from "gsap";
 
 export default function ProfileCompletion(){
+    const cardContainer3 = useRef()
+    
+    useGSAP(
+        () => {
+            gsap.from('.cardContainer3',{duration:1, opacity:0, scale:0.3, ease:"back"});
+
+        })
+
     return (
         <div className="m-10 mt-10 min-h-screen">
-            <div className="flex flex-col sm:flex-col lg:flex-row  lg:justify-start lg:items-start lg:text-left  text-center gap-x-10">
+            <div className="cardContainer3 flex flex-col sm:flex-col lg:flex-row  lg:justify-start lg:items-start lg:text-left  text-center gap-x-10" ref={cardContainer3}>
                 <div>
                     <h1 className="text-8xl font-bold">03</h1>
                 </div>

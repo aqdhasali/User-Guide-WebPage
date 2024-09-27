@@ -1,4 +1,11 @@
+"use client";
+
 import {Michroma} from "@next/font/google";
+import {useGSAP} from "@gsap/react";
+import {useRef} from "react";
+import gsap from "gsap";
+
+gsap.registerPlugin(useGSAP)
 
 const michroma = Michroma({
     weight:'400',
@@ -6,9 +13,18 @@ const michroma = Michroma({
   });
 
 export default function CardActivation(){
+    const cardContainer = useRef()
+    const image = useRef()
+    
+    useGSAP(
+        () => {
+            gsap.from('.cardContainer',{duration:1, opacity:0, scale:0.3, ease:"back"});
+
+        })
+
     return(
         <div className="min-h-screen m-10">
-            <div className="flex flex-col gap-x-10 justify-center items-center lg:justify-start lg:items-start lg:text-left sm:flex-row sm:items-center sm:justify-center">
+            <div  ref={cardContainer}  className="cardContainer flex flex-col gap-x-10 justify-center items-center lg:justify-start lg:items-start lg:text-left sm:flex-row sm:items-center sm:justify-center">
                 <div>
                     <h1 className="text-8xl font-bold">01</h1>
                 </div>
@@ -26,7 +42,7 @@ export default function CardActivation(){
                 {/* Image One  */}
                 <div className="flex flex-col sm:flex-row items-center justify-center">
                     
-                    <img className="w-96 max-w-3xl rounded-lg shadow-lg"
+                    <img className=" w-96 max-w-3xl rounded-lg shadow-lg"
                     autoPlay
                     muted
                     src="/1.gif" alt="card tap video"></img>

@@ -8,7 +8,7 @@ export default function FinalProfile(){
                 </div>
 
                 <div className="flex items-center justify-center">
-                    <img className="lg:w-80 w-screen h-2/4 max-w-3xl rounded-lg"
+                    <img className="lg:w-110 w-screen h-2/4 max-w-3xl rounded-lg"
                                 autoPlay
                                 // loop
                                 muted

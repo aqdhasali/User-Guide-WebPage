@@ -8,7 +8,7 @@ const michroma = Michroma({
 export default function CardActivation(){
     return(
         <div className="min-h-screen m-10">
-            <div className="flex flex-col gap-x-10 justify-center items-center  sm:flex-row sm:items-center sm:justify-center">
+            <div className="flex flex-col gap-x-10 justify-center items-center lg:justify-start lg:items-start lg:text-left sm:flex-row sm:items-center sm:justify-center">
                 <div>
                     <h1 className="text-8xl font-bold">01</h1>
                 </div>

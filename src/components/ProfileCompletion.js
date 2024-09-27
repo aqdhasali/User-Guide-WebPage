@@ -8,7 +8,7 @@ const michroma = Michroma({
 export default function ProfileCompletion(){
     return (
         <div className="m-10 mt-10 min-h-screen">
-            <div className="flex flex-col sm:flex-col lg:flex-row  items-center justify-end gap-x-10">
+            <div className="flex flex-col sm:flex-col lg:flex-row  lg:justify-start lg:items-start lg:text-left  text-center gap-x-10">
                 <div>
                     <h1 className="text-8xl font-bold">03</h1>
                 </div>

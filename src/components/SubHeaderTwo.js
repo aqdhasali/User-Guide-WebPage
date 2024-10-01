@@ -24,13 +24,17 @@ export default function SubHeaderTwo(){
     useGSAP(
         () => {
             gsap.from(subHeaderTextTwo.current,
-                {duration:2, opacity:0, scale:2, ease:"power2.inOut",
+                {duration:2, 
+                opacity:0, 
+                scale:0.5, 
+                ease:"power2.inOut",
                     scrollTrigger: {
                         trigger: subHeaderTextTwo.current, // Trigger when this element scrolls into view
                         start: "top 100%", // When the top of the element is 80% down the viewport
                         end:"bottom 20%",
                         scrub: 3, // Smooth animation while scrolling
                         markers: false, // Set to true for debugging markers
+                        transformOrigin:"center center"
                       },
                 }
             );

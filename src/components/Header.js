@@ -19,8 +19,14 @@ export default function Header(){
     
     useGSAP(
         () => {
-            gsap.from('.headerText',{duration:1, opacity:0, scale:0.5, ease:"power2.inOut"});
-
+            gsap.from('.headerText',
+                {duration:1,
+                 opacity:0, 
+                 scale:0.5, 
+                 y:100,
+                 ease:"power2.inOut",
+                 transformOrigin:"center center",
+                });
         })
     return(
         <div className=" flex items-center justify-center text-center min-h-screen bg-cover bg:auto bg-radial-gradient bg-center animate-pulse bg-no-repeat sm:bg-auto lg:bg-auto" ref={headerText}>

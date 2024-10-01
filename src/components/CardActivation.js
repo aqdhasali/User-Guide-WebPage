@@ -4,8 +4,9 @@ import {Michroma} from "@next/font/google";
 import {useGSAP} from "@gsap/react";
 import {useRef} from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from 'gsap/all';
 
-gsap.registerPlugin(useGSAP)
+gsap.registerPlugin(useGSAP,ScrollTrigger)
 
 const michroma = Michroma({
     weight:'400',
@@ -14,11 +15,23 @@ const michroma = Michroma({
 
 export default function CardActivation(){
     const cardContainer = useRef()
-    const image = useRef()
     
     useGSAP(
         () => {
-            gsap.from('.cardContainer',{duration:1, opacity:0, scale:0.3, ease:"back"});
+            gsap.from('.cardContainer',{
+                duration:1, 
+                opacity:0, 
+                scale:0.2, 
+                ease:"power2.inOut",
+                scrollTrigger: {
+                    trigger: cardContainer.current, // Trigger when this element scrolls into view
+                    start: "top 70%",
+                    end:"30%", // When the top of the element is 80% down the viewport
+                    scrub: 3, // Smooth animation while scrolling
+                    markers: false, // Set to true for debugging markers
+                   
+                  },
+            });
 
         })
 

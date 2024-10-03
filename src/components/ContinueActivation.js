@@ -64,7 +64,7 @@ export default function ContinueActivation(){
 
             <div className="flex flex-col sm:flex-row items-stretch">
                 <div>
-                    <img className="w-full h-full max-w-5xl rounded-lg shadow-lg"
+                    <img className="w-full lg:w-3/4 max-w-5xl rounded-lg shadow-lg"
                         autoPlay
                         // loop
                         muted

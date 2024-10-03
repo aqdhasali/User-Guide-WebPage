@@ -21,8 +21,8 @@ export default function ProfileCompletion(){
                 ease:"power2.inOut",
                 scrollTrigger: {
                     trigger: cardContainer3.current, // Trigger when this element scrolls into view
-                    start: "top 70%",
-                    end:"30%", // When the top of the element is 80% down the viewport
+                    start: "top 80%",
+                    end:"20%", // When the top of the element is 80% down the viewport
                     scrub: 3, // Smooth animation while scrolling
                     markers: false, // Set to true for debugging markers  
                   },
@@ -45,7 +45,7 @@ export default function ProfileCompletion(){
 
             <div className="flex flex-col sm:flex-row">
                 <div>
-                    <img className="w-full max-w-3xl rounded-lg shadow-lg"
+                    <img className="w-full lg:w-3/4 max-w-3xl rounded-lg shadow-lg"
                     autoPlay
                     // loop
                     muted

@@ -20,8 +20,8 @@ export default function CustomProfile(){
                 ease:"power2.inOut",
                 scrollTrigger: {
                     trigger: cardContainer4.current, // Trigger when this element scrolls into view
-                    start: "top 70%",
-                    end:"30%", // When the top of the element is 80% down the viewport
+                    start: "top 80%",
+                    end:"20%", // When the top of the element is 80% down the viewport
                     scrub: 3, // Smooth animation while scrolling
                     markers: false, // Set to true for debugging markers  
                   },
@@ -30,7 +30,7 @@ export default function CustomProfile(){
 
 
     return(
-        <div className="mt-10 min-h-screen m-10 ">
+        <div className="min-h-screen mt-20 m-10">
             <div className="cardContainer4 mt-10 flex flex-col sm:flex-col lg:flex-row gap-10  items-center justify-end" ref={cardContainer4}>
                 <div>
                     <h1 className="text-8xl text-center lg:text-left font-bold">04</h1>
@@ -48,7 +48,7 @@ export default function CustomProfile(){
 
             <div className="flex flex-col lg:flex-row">
                 <div>
-                    <img className="w-full max-w-3xl rounded-lg shadow-lg"
+                    <img className="w-full lg:w-3/4 max-w-3xl rounded-lg shadow-lg"
                         autoPlay
                         // loop
                         muted

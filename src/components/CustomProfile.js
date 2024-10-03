@@ -48,7 +48,7 @@ export default function CustomProfile(){
 
             <div className="flex flex-col lg:flex-row">
                 <div>
-                    <img className="w-96 max-w-3xl rounded-lg shadow-lg"
+                    <img className="w-full max-w-3xl rounded-lg shadow-lg"
                         autoPlay
                         // loop
                         muted

@@ -22,15 +22,15 @@ export default function Header(){
             gsap.from('.headerText',
                 {duration:1,
                  opacity:0, 
-                 scale:0.5, 
+                 scale:0.2, 
                  y:100,
                  ease:"power2.inOut",
                  transformOrigin:"center center",
                 });
         })
     return(
-        <div className=" flex items-center justify-center text-center min-h-screen bg-cover bg:auto bg-radial-gradient bg-center animate-pulse bg-no-repeat sm:bg-auto lg:bg-auto" ref={headerText}>
-            <h1 className={`${poppins.className} headerText text-6xl lg:text-8xl sm:text-5xl md:text-6xl `}>User Guide</h1>        
+        <div className="min-h-screen flex items-center justify-center text-center min-h-screen bg-cover bg-radial-gradient bg-center animate-pulse bg-no-repeat sm:bg-auto lg:bg-auto" ref={headerText}>
+            <h1 className={`${poppins.className} headerText text-4xl lg:text-8xl sm:text-5xl md:text-6xl `}>User Guide</h1>        
         </div>
 
     )

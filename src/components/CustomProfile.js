@@ -57,8 +57,8 @@ export default function CustomProfile(){
                 </div>
 
 
-                <div className="w-auto sm:w-1/2 lg:mt-20 tracking-tight p-10 container items-center breakwords w-1/2 border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
-                    <p className="text-sm">You have the eligibility to add any of your socials here as you prefer. <br></br><br></br><br></br>
+                <div className="w-auto sm:w-1/2 lg:mt-28 tracking-tight p-10 container items-center breakwords w-1/2 border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
+                    <p className="text-sm">You have the eligibility to add any of your socials here as you prefer. <br></br><br></br>
                     Therefore, You can stay connected with your visitors online as well. <br></br><br></br><br></br>
                     </p>
                 </div>

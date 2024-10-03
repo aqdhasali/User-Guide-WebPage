@@ -30,7 +30,7 @@ export default function SubHeaderOne(){
                 ease:"power2.inOut",
                 scrollTrigger: {
                     trigger: subHeaderTextOne.current, // Trigger when this element scrolls into view
-                    start: "top 100%", // When the top of the element is 80% down the viewport
+                    start: "top 80%", // When the top of the element is 80% down the viewport
                     end:"bottom 20%",
                     scrub: 3, // Smooth animation while scrolling
                     markers: false, // Set to true for debugging markers

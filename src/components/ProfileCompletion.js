@@ -52,8 +52,8 @@ export default function ProfileCompletion(){
                     src="/4.gif" alt="card tap video"></img>
                 </div>
 
-                <div className="w-auto sm:w-1/2 tracking-tight mt-28 p-10 container items-center breakwords border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
-                    <p className="text-sm"> A complete profile helps personalize your interaction, ensures smooth communication, and unlocks access to all features. <br></br><br></br><br></br>
+                <div className="w-auto sm:w-1/2 tracking-tight mt-20 p-10 container items-center breakwords border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
+                    <p className="text-sm"> A complete profile helps personalize your interaction, ensures smooth communication, and unlocks access to all features. <br></br><br></br>
                     Follow these quick steps to fill in your details and get the most out of your account!<br></br><br></br>
                     </p>
                 </div>

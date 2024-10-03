@@ -7,7 +7,7 @@ const michroma = Michroma({
 
 export default function Footer(){
     return(
-        <div className="ml-10 mr-10 flex flex-col lg:flex-row">
+        <div className="m-10 flex flex-col lg:flex-row">
 
             <div className="flex-grow">
                 <div className="flex flex-col gap-y-10 ">

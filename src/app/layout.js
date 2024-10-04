@@ -28,8 +28,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} scroll-smooth text-l` }>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.className} text-l` }>
       <meta name = "viewport" content= "width=device-width, initial-scale=1.0" className=""></meta>
         <Header />
         <SubHeaderOne />

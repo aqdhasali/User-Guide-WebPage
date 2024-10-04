@@ -26,11 +26,12 @@ export default function SubHeaderOne(){
             gsap.from(subHeaderTextOne.current,{
                 duration:2, 
                 opacity:0, 
-                scale:0.5, 
+                scale:0.1, 
                 ease:"power2.inOut",
                 scrollTrigger: {
                     trigger: subHeaderTextOne.current, // Trigger when this element scrolls into view
-                    start: "top 100%", // When the top of the element is 80% down the viewport
+                    start: "top 80%",
+                    end:"top 60%",
                     scrub: 2, // Smooth animation while scrolling
                     markers: false, // Set to true for debugging markers
                     transformOrigin:"center center"

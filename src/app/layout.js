@@ -14,7 +14,7 @@ import FinalProfile from "@/components/FinalProfile";
 
 
 const inter = Inter({
-  weight:'400',
+  weight:['400','500','600'],
   subsets:['cyrillic'],
 });
 
@@ -33,7 +33,6 @@ export default function RootLayout({ children }) {
       <meta name = "viewport" content= "width=device-width, initial-scale=1.0" className=""></meta>
         <Header />
         <SubHeaderOne />
-        <SubHeaderTwo />
         <CardActivation />
         <ContinueActivation />
         <ProfileCompletion />

@@ -22,7 +22,7 @@ export default function CardActivation(){
                 duration:1, 
                 opacity:0, 
                 scale:0.2, 
-                ease:"power2.inOut",
+                ease:"power2.Out",
                 scrollTrigger: {
                     trigger: cardContainer.current, // Trigger when this element scrolls into view
                     start: "top 70%",
@@ -43,7 +43,7 @@ export default function CardActivation(){
                 </div>
                 
                 <div className="mt-4 text-center sm:text-left ">
-                    <h2 className="tracking-tight text-2xl font-semibold">Card Activation</h2>
+                    <h2 className="tracking-tight text-2xl font-bold">Card Activation</h2>
                     <h3 className="tracking-tight text-xl">You can choose either two of these options two successfully activate your card.</h3>
                 </div>
             </div>

@@ -14,12 +14,7 @@ export default function Footer(){
                     <h2 className="text-5xl bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent">Trust-Quality-Dignity<br></br>-Connected</h2>
                     <h3>Want to learn more about us?Discover<br></br> our story and mission by clicking below!</h3>
                     <div className="flex gap-x-5">
-                        <div className="w-20 h-10 bg-white flex items-center justify-center rounded-md">
-                            <h3 className="tracking-tight text-slate-800 text-md text-center"><a href="https://app.primeq.co/">Login</a></h3>
-                        </div>
-                        <div className="bg-white w-20 flex items-center justify-center rounded-md">
-                            <h3 className="tracking-tight text-slate-800 text-md">Website</h3>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

@@ -30,9 +30,8 @@ export default function SubHeaderOne(){
                 ease:"power2.inOut",
                 scrollTrigger: {
                     trigger: subHeaderTextOne.current, // Trigger when this element scrolls into view
-                    start: "top 80%", // When the top of the element is 80% down the viewport
-                    end:"bottom 20%",
-                    scrub: 3, // Smooth animation while scrolling
+                    start: "top 100%", // When the top of the element is 80% down the viewport
+                    scrub: 2, // Smooth animation while scrolling
                     markers: false, // Set to true for debugging markers
                     transformOrigin:"center center"
                   },
@@ -41,8 +40,10 @@ export default function SubHeaderOne(){
         })
 
     return(
-        <div className="flex items-center justify-center min-h-screen bg-radial-gradient-md bg-center bg-contain animate-pulse bg-no-repeat" >
-            <h2 className={`${poppins.className} subHeaderTextOne tracking-tighter text-center text-4xl lg:text-3xl font-semibold bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent break-words`} ref={subHeaderTextOne}>Your One Tap Digital<br></br>Business Card</h2>
+        <div className="hidden lg:block flex m-20 items-center justify-center min-h-screen" ref={subHeaderTextOne} >
+            <div className="lg:w-full h-full bg-zinc-900 border-2">
+                <img className="w-full hidden lg:block" src="Header.gif" ></img>
+            </div>
         </div>
     )
 }

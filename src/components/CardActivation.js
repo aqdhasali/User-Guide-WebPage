@@ -61,7 +61,7 @@ export default function CardActivation(){
                     src="/1.gif" alt="card tap video"></img>
                     
 
-                    <div className="w-auto lg:w-64 h-auto tracking-tight mt-12 p-5 container items-center breakwords  border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
+                    <div className="w-auto lg:w-64 h-72 tracking-tight mt-12 p-5 container items-center breakwords  border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
                         <span className="text-md font-medium" >Tap & Activate</span>
                         <p className="text-sm">Activate your card by tapping it against your phone. <br></br><br></br>
 
@@ -84,7 +84,7 @@ export default function CardActivation(){
                     src="/2.gif" alt="card tap video"></img>
                     
 
-                    <div className="w-auto lg:w-64 tracking-tight mt-12 p-5 container items-center  border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
+                    <div className="w-auto lg:w-64 h-72 tracking-tight mt-12 p-5 container items-center  border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
                         <span className="text-md font-medium" >Scan & Activate</span>
                         <p className="text-sm">Activate your card by scanning its QR .<br></br><br></br>
                         Use this option on phones that don't support NFC reading. <br></br><br></br>

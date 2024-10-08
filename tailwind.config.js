@@ -28,9 +28,14 @@ module.exports = {
           '0%, 100%': { transform: 'scale(0.95)', opacity: 1 },
           '50%': { transform: 'scale(1.5)', opacity: 1 },
         },
+        pulseOnce:{
+          '0%,100%' :{opacity:1},
+          '50%' : {opacity:0.5},
+        }
       },
       animation: {
         grow: 'grow 1.1s ease-in-out',
+        pulseOnce:'pulse 1.1s ease-in-out'
       },
     },
   },

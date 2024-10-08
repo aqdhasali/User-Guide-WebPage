@@ -1,51 +1,32 @@
 import {Michroma} from "@next/font/google";
 
 const michroma = Michroma({
-    weight:'400',
+    weight:['400'],
     subsets:['latin'],
   });
 
 export default function Footer(){
     return(
-        <div className="m-10 flex flex-col lg:flex-row">
-
+        <div className="m-20 flex flex-col">
             <div className="flex-grow">
-                <div className="flex flex-col gap-y-10 ">
-                    <h2 className="text-5xl bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent">Trust-Quality-Dignity<br></br>-Connected</h2>
-                    <h3>Want to learn more about us?Discover<br></br> our story and mission by clicking below!</h3>
-                    <div className="flex gap-x-5">
+                <div className="flex flex-col justify-center items-center gap-2">
+                    <h1 className={`${michroma.className} uppercase headerText text-center text-md lg:text-2xl bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent`}>Trust-Quality-Dignity-Connected</h1>  
+                    <p className={`${michroma.className} text-xs lg:text-sm text-center`}>Want to learn more about us? Discover our story and mission by clicking below!</p>
+                    <img className="mt-3 w-48" src="logo.svg"></img>
+
+                    <div className="mt-20">
+                        <h2 className="text-center">Socials</h2>
+                        <div className="flex gap-2 text-neutral-500">
+                            <span>Facebook</span>
+                            <span>LinkedIn</span>
+                            <span>Instagram</span>
+                        </div>
                         
                     </div>
                 </div>
             </div>
-
-            <div className="flex items-end justify-end lg:ml-10 animate-pulse">
-                    <img className="w-full lg:w-96" src="/footer-bg.svg" alt="footer background"></img>
-            </div>
-            
-            
-
-            
-
-          
-
-
         </div>
         
     )
 }
 
-
-{/* <div className="mt-20 flex items-center justify-between flex-shrink-0 text-center md:text-base md:text-left">
-
-<div className="w-1/5 flex justify-start opacity-25">
-    <img className="w-full h-full" src="./logo.png"></img>
-</div>
-
-<div className="justify-center w-4/5 flex flex-col gap-y-2 items-center">
-    <h2 className={`${michroma.className} text-lg text-center`}>Trust<span className="text-yellow"> - Quality - </span>Dignity<span className="text-yellow"> - Connected</span></h2>
-    <img className="w-48" src="./word-logo.png" alt="text-logo"></img>
-    <p className="text-center">www.commercialprime.co.uk</p>
-</div>
-
-</div> */}

@@ -5,12 +5,17 @@ import {useGSAP} from "@gsap/react";
 import {useRef} from "react";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/all";
+import {Michroma} from "@next/font/google"
 
 const poppins = Poppins({
     weight:['200','400', '600','900'],
     subsets:['latin'],
   });
 
+const michroma = Michroma({
+    weight:['400'],
+    subsets:['latin'],
+})
 
 gsap.registerPlugin(useGSAP,ScrollTrigger)
 
@@ -38,18 +43,28 @@ export default function Header(){
         });
 
     return(
-        <div className="flex flex-col justify-between min-h-screen bg-cover bg-radial-gradient bg-center animate-pulse bg-no-repeat sm:bg-auto lg:bg-auto" ref={headerText}>
+        <div className="flex flex-col justify-between min-h-screen bg-cover bg-radial-gradient bg-center animate-pulseOnce not-infinite bg-no-repeat sm:bg-auto lg:bg-auto" ref={headerText}>
+
+            <div className="m-5 flex justify-between">
+                <img className="w-28 lg:w-48" src="logo.svg" alt="Commercial Prime Logo"></img>
+
+                <div className="flex gap-3 lg:gap-5">
+                    
+                </div>
+            </div>
+
+
             <div className="flex flex-grow flex-col gap-10 items-center justify-center text-center">
-                <h1 className={`${poppins.className} uppercase headerText text-8xl lg:text-8xl`}>User Guide</h1>  
-                <h4 className="headerText uppercase text-md">Your One Tap Digital Business Card. Follow these steps to successfully<br></br>activate your card. </h4>      
+                <h1 className={`${michroma.className} uppercase headerText text-5xl lg:text-6xl`}>User Guide</h1>  
+                <p className={`${michroma.className} p-4 headerText uppercase text-xs lg:text-sm breakwords`}>Your One Tap Digital Business Card. Follow these steps to successfully<br></br>activate your card. </p>      
             </div>
             
           
-            <div className="flex justify-between items-center " ref={scroll}>
-                <div className="ml-10 w-32 h-10 border-2 border-white hover:bg-zinc-900 rounded-md flex items-center justify-center rounded-md hover:bg-zinc-900 transition duration-300">
+            <div className="flex justify-between ml-10 mr-10 items-center " ref={scroll}>
+
+                <div className="w-20 lg:32 h-10 border-2 border-white hover:bg-zinc-900 rounded-md flex items-center justify-center rounded-md hover:bg-zinc-900 transition duration-300">
                     <h3 className="tracking-tight text-md">Login</h3>
                 </div>
-                       
 
                 <div className="scroll flex flex-col items-center justify-center mb-20" ref={scroll}>
                     <div className="text-xs tracking-widest uppercase">scroll</div>
@@ -58,9 +73,11 @@ export default function Header(){
                     </svg>
                 </div>
 
-                <div className="mr-10 w-32 h-10 border-2 border-white  rounded-md flex items-center justify-center rounded-md hover:bg-zinc-900 transition duration-300" ref={scroll}>
-                    <h3 className="tracking-tight text-md">Website</h3>
+
+                <div className="w-20 lg:32 h-10 border-2 border-white  rounded-md flex items-center justify-center rounded-md hover:bg-zinc-900 transition duration-300" ref={scroll}>
+                        <h3 className="tracking-tight text-md">Website</h3>
                 </div>
+
             </div>
         </div>
 

@@ -39,7 +39,7 @@ export default function ProfileCompletion(){
           
                 <div className="mt-4 text-center lg:text-left">
                     <h2 className="tracking-tight text-2xl font-semibold">Complete Your Profile</h2>
-                    <h3 className="tracking-tight text-xl">Enhance your experience by completing your profile.</h3>
+                    <h3 className="tracking-tight text-xl">Personalise your experience.</h3>
                 </div>
             </div>
 
@@ -52,10 +52,10 @@ export default function ProfileCompletion(){
                     src="/4.gif" alt="card tap video"></img>
                 </div>
 
-                <div className="w-auto sm:w-1/2 tracking-tight mt-20 p-10 container items-center breakwords border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
-                    <p className="text-sm"> A complete profile helps personalize your interaction, ensures smooth communication, and unlocks access to all features. <br></br><br></br>
-                    Follow these quick steps to fill in your details and get the most out of your account!<br></br><br></br>
-                    </p>
+                <div className="flex flex-col gap-5 w-auto sm:w-1/2 tracking-tight mt-20 p-10 border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
+                    <span>A complete profile helps personalise interactions, ensures smooth communication, and unlocks all features.</span>
+                    <span>You can enable high privacy mode to protect your information.</span>
+                    <span>You can create and manage multiple profiles based on your specific needs.</span>
                 </div>
             </div>
 

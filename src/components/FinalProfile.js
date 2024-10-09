@@ -4,6 +4,15 @@ import {useGSAP} from "@gsap/react";
 import {useRef} from "react";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/all";
+import {Michroma} from "@next/font/google"
+import {Poppins} from "@next/font/google"
+
+const michromaFont = Michroma({
+    weight:['400'],
+    subsets:['latin'],
+})
+
+
 
 gsap.registerPlugin(useGSAP,ScrollTrigger)
 
@@ -30,8 +39,8 @@ export default function FinalProfile(){
         <div className="bg-contain bg-center bg-radial-gradient bg-no-repeat m-10">
             <div className="flex flex-col justify-center items-center">
                 <div className="finalHeader" ref={finalHeader}>
-                    <h2 className="tracking-tight tracking-tighter text-center text-4xl font-semibold bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent ">You're Ready To Go</h2>
-                    <h3 className="tracking-tighter text-center text-xl font-semibold bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent">Now Simply Tap Your Phone On Your Visitor's Phone</h3>
+                    <p className={`${michromaFont.className}  text-center text-md lg:text-4xl font-bold  bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent `}>You're Ready To Go</p>
+                    <h3 className={`${michromaFont.className}  text-center text-sm lg:text-xl font-semibold bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent`}>Now Simply Tap Your Phone On Your Visitor's Phone</h3>
                 </div>
 
                 <div className="flex items-center justify-center">

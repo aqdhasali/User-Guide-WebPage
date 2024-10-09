@@ -39,7 +39,7 @@ export default function CustomProfile(){
                 <div className="flex flex-col sm:flex-col lg:flex-row  items-center justify-end gap-x-10">
                     <div className="mt-4 text-center lg:text-left">
                             <h2 className="tracking-tight text-2xl font-semibold">Customise Your Profile</h2>
-                            <h3 className="tracking-tight text-xl">Enhance your experience by completing your profile.</h3>
+                            <h3 className="tracking-tight text-xl">Tailor your shareable link</h3>
                     </div>
                 </div>
             </div>
@@ -57,10 +57,19 @@ export default function CustomProfile(){
                 </div>
 
 
-                <div className="w-auto sm:w-1/2 lg:mt-28 tracking-tight p-10 container items-center breakwords w-1/2 border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
-                    <p className="text-sm">You have the eligibility to add any of your socials here as you prefer. <br></br><br></br>
-                    Therefore, You can stay connected with your visitors online as well. <br></br><br></br><br></br>
-                    </p>
+                <div className="flex flex-col gap-5 w-auto sm:w-1/2 lg:mt-28 tracking-tight p-10 container items-center breakwords w-1/2 border hover:border-slate-600 transition duration-300 rounded bg-neutral-900 flex flex-col h-full justify-center ">
+                    <span className="text-sm">Add your preferred social media accounts and customise how your shareable link will appear.</span>
+                    <span className="text-sm">This allows you to stay connected with visitors online and enhance your networking experience.</span>
+                    <span>Steps To Follow</span>
+                    <div className="flex gap-2 bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent">
+                        <span className="text-sm">1. Select Icon</span>
+                        <span className="text-sm"> - </span>
+                        <span className="text-sm">2. Add Field Name</span>
+                        <span className="text-sm"> - </span>
+                        <span className="text-sm">3. Add Field Content</span>
+                        <span className="text-sm"> - </span>
+                        <span className="text-sm">4. Click Save</span>
+                    </div>
                 </div>
             </div>
 

@@ -40,11 +40,11 @@ export default function FinalProfile(){
             <div className="flex flex-col justify-center items-center">
                 <div className="finalHeader" ref={finalHeader}>
                     <p className={`${michromaFont.className}  text-center text-md lg:text-4xl font-bold  bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent `}>You're Ready To Go</p>
-                    <h3 className={`${michromaFont.className}  text-center text-sm lg:text-xl font-semibold bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent`}>Now Simply Tap Your Phone On Your Visitor's Phone</h3>
+                    <h3 className={`${michromaFont.className}  text-center text-sm lg:text-xl font-semibold bg-gradient-to-r from-gray-50 to-gray-400 bg-clip-text text-transparent`}>Now Simply Tap Your Card On Your Visitor's Phone</h3>
                 </div>
 
                 <div className="flex items-center justify-center">
-                    <img className="lg:w-110 w-full h-2/4 max-w-3xl rounded-lg"
+                    <img className="lg:w-110 w-full h-2/4 max-w-2xl rounded-lg"
                                 autoPlay
                                 // loop
                                 muted

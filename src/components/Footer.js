@@ -13,6 +13,7 @@ export default function Footer(){
                     <h1 className={`${michroma.className} uppercase headerText text-center text-md lg:text-2xl `}>Trust-Quality-Dignity-Connected</h1>  
                     <p className={`${michroma.className} text-xs lg:text-sm text-center`}>Want to learn more about us? Discover our story and mission by clicking below!</p>
                     <img className="mt-3 w-48" src="logo.svg"></img>
+                    <div className="p-1 tracking-tighter bg-white rounded-xl w-24 text-center text-slate-800 text-xs hover:bg-zinc-900 hover:text-white transition duration-300"><a href="https://app.primeq.co/#/register">Back to Register</a></div>
 
 
                     <div className="mt-20">
